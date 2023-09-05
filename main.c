@@ -45,4 +45,6 @@ int main(int argc, char *argv[])
             fwrite(buffer, 1, 512, jpegFile);
         }
     }
+    fclose(jpegFile);
+    fclose(filePtr);
 }
